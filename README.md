@@ -17,20 +17,6 @@ AirMouse is a futuristic, computer vision-powered virtual mouse that allows you 
 
 This project consists of static HTML, CSS, and vanilla JavaScript. It requires no build steps or bundlers.
 
-### Running Locally
-To test it locally, you just need a basic HTTP server to bypass browser webcam security restrictions.
-```bash
-python -m http.server 8000
-```
-Then visit `http://localhost:8000`
-
-### Deploying to Vercel
-Because this is a static site, deploying to Vercel takes seconds:
-1. Push this repository to your GitHub account.
-2. Log into [Vercel](https://vercel.com/) and click **Add New Project**.
-3. Import your GitHub repository.
-4. Leave all build settings as default (no framework, no build command) and click **Deploy**.
-5. Your AirMouse will be live and accessible from anywhere!
 
 ## 🔧 Technologies
 - **HTML/CSS/JS**

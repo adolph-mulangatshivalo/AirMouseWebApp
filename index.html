@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirMouse - Pro Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard">
+
+
+
+        <main class="main-content">
+            <!-- Left Column: Bold Typography -->
+            <div class="col-left">
+                <div class="pill-badge">Technology</div>
+                <h1>AIR MOUSE<br>TECHNOLOGY<br><span class="text-grey">The Control Is<br>in Your Hands.</span></h1>
+                <p class="subtitle">Engineered for precision and effortless cursor control.<br>Minimal effort, maximum
+                    efficiency in every use.</p>
+            </div>
+
+            <!-- Center Column: The Visual Feature -->
+            <div class="col-center">
+                <!-- Large decorative black circle -->
+                <div class="video-backdrop"></div>
+
+                <div class="video-container">
+                    <video id="webcam" autoplay playsinline></video>
+                    <canvas id="output_canvas"></canvas>
+                    <div id="loading" class="loading">Loading...</div>
+                </div>
+                
+                <div id="action-bar" class="action-bar">
+                    <span id="action-text">Initializing...</span>
+                </div>
+            </div>
+
+            <!-- Right Column: Status Cards -->
+            <div class="col-right">
+                <div class="status-card">
+                    <span class="status-label">System Status</span>
+                    <span class="status-value" id="status">Loading</span>
+                </div>
+
+                <div class="status-card">
+                    <span class="status-label">Performance</span>
+                    <span class="status-value"><span id="fps">0</span> <span
+                            style="font-size: 1.2rem; color: #888;">FPS</span></span>
+                </div>
+
+                <div class="status-card">
+                    <span class="status-label">Accuracy</span>
+                    <span class="status-value text-yellow">99%</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="virtual-cursor"></div>
+
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
